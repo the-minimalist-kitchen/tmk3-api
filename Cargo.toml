@@ -1,0 +1,20 @@
+[workspace]
+resolver = "2"
+members = [ "sqlite_connection_pool" ]
+
+[workspace.dependencies]
+bytes = "1"
+argon2 = { version = "0.5", features = ["std"] }
+futures-util = { version = "0.3", default-features = false }
+http-body-util = "0.1"
+hyper-util = { version = "0.1", features = ["full"] }
+hyper = { version = "1", features = ["full"] }
+base64 = { version = "0.22" }
+futures = "0.3"
+rand = "0.9.0"
+rusqlite = { version = "0.32" }
+snowprints = { git = "https://github.com/taylor-vann/snowprints", version = "0.1" }
+tokio = { version = "1", features = ["full"] }
+tokio-util = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
